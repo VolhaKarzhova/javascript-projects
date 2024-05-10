@@ -5,12 +5,20 @@ let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
+console.log(protoArray1.includes(" "));
+console.log(protoArray1.includes(";"));
+console.log(protoArray1.includes(","));
+commaSpace();
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
-	let check;
-	let output;
+	let check = protoArray1.includes(",");
+	let output = [];
 	//TODO: 2. write the code required for this step
+	if (check) {
+		output = protoArray1.split(",").reverse().join(",");
+	}
+	console.log(output);
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
@@ -18,29 +26,39 @@ function reverseCommas() {
 
 //3)
 function semiDash() {
-	let check;
-	let output;
+	let check = protoArray2.includes(";");
+	let output = [];
 //TODO: write the code required for this step
+  if (check) {
+	output = protoArray2.split(";").sort().join("-");
+  }
+  console.log(output);
 
-  
 	return output;
 }
 
 //4)
 function reverseSpaces() {
-	let check;
-	let output;
+	let check = protoArray3.includes(" ");
+	let output = [];
   //TODO: write the code required for this step
+  if (check) {
+	output = protoArray3.split(" ").sort().reverse().join(" ");
+  }
+  console.log(output);
 
 	return output;
 }
 
 //5)
 function commaSpace() {
-	let check;
-	let output;
+	let check = protoArray4.includes(", ");
+	let output = [];
 	//TODO: write the code required for this step
-  
+  if (check) {
+	output = protoArray4.split(", ").reverse().join(",");
+  }
+  console.log(output);
 	return output;
 }
 
