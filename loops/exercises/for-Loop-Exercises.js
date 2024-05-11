@@ -4,6 +4,23 @@
     c. Print the EVEN numbers 12 to -14 in descending order, one number per line.
     d. Challenge - Print the numbers 50 - 20 in descending order, but only if the numbers are multiples of 3. (Your code should work even if you replace 50 or 20 with other numbers). */
 
+for(let i = 0; i < 21; i++) {
+  console.log(i);
+}
+
+for(let i = 3; i < 31; i = i + 2) {
+  console.log(i);
+}
+
+for(let i = 12; i > -15; i = i - 2) {
+  console.log(i);
+}
+
+for(let i = 50; i > 20; i--) {
+  if(i % 3 === 0){
+    console.log(i);
+  }
+}
 
 
 
@@ -15,10 +32,31 @@ Construct ``for`` loops to accomplish the following tasks:
   a. Print each element of the array to a new line.
   b. Print each character of the string - in reverse order - to a new line. */ 
 
+const value = 'LaunchCode';
+const arrayValue = [1, 5, 'LC101', 'blue', 42];
 
+ for(let i = 0; i < arrayValue.length; i++) {
+  console.log(arrayValue[i]);
+ }
+
+ for(let i = value.length-1; i >= 0; i--){
+  console.log(value[i]);
+ }
 
 
 
 /*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   a. One array contains the even numbers, and the other holds the odds.
   b. Print the arrays to confirm the results. */
+
+  const array1 = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+  let evenArray = [];
+  let oddArray = [];
+
+  for(let i = 0; i < array1.length; i ++) {
+    if(array1[i] % 2 === 0) {
+      evenArray.push(array1[i]);
+    } else oddArray.push(array1[i]);
+  }
+  console.log(evenArray);
+  console.log(oddArray);
