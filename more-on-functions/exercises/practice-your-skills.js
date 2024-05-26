@@ -5,6 +5,21 @@ a) If passed a number, return the tripled value.
 b) If passed a string, return the string “ARRR!”
 c) Be sure to test your function before moving on the next part. 
 */
+let getValue = function(input) {
+    if(typeof(input) === "number") {
+        return input * 3;
+    }
+    if(typeof(input) === "string") {
+        return "ARRR!";
+    }
+    if(typeof input !== "string" && typeof input !== "number") {
+        return input;
+    }
+}
+
+console.log(getValue(324));
+console.log(getValue("sdfgh"));
+console.log(getValue(true));
 
 /* Add to your code! Use your fuction and the map method to change an array  as follows:
 a) Triple any the numbers.
@@ -13,3 +28,5 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+let updatedArray = arr.map(getValue);
+console.log(updatedArray);
