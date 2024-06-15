@@ -1,5 +1,11 @@
 function whoWon(player1,player2){
 
+  const choices = ['scissors', 'paper', 'rock'];
+
+  if(!choices.includes(player1) || !choices.includes(player2)) {
+    return 'At least one selection of player is invalid';
+  }
+
    if (player1 === player2){
      return 'TIE!';
    }
@@ -12,9 +18,11 @@ function whoWon(player1,player2){
      return 'Player 2 wins!';
    }
    
-   if (player1 === 'scissors' && player2 === 'rock '){
+   if (player1 === 'scissors' && player2 === 'rock'){
      return 'Player 2 wins!';
    }
  
    return 'Player 1 wins!';
  }
+
+ module.exports = whoWon;
