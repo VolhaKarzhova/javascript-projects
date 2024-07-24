@@ -1,1 +1,27 @@
-/* Start adding your styling below! */ 
+/* Start adding your styling below! */
+body {
+    background-color: lightyellow;
+}
+
+p {
+    color: green;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.center {
+    text-align: center;
+}
+
+#cool-text {
+    color: blue;
+}
+
+#darkGreen {
+    color: darkgreen;
+}
+#important {
+    color:brown;
+}
