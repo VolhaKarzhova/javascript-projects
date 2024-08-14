@@ -1,0 +1,15 @@
+Below are my answers to the excercises in JSON module:
+1. Correct option is B.
+{
+   "type": "dog",
+   "name": "Bernie",
+   "age": 3
+}
+Option A is incorrect as it keys on JSON don not have double quotes.
+
+Option C is incorrect as String values use single quotes instead of double quotes.
+
+2. Option A is Correct
+   Option B is incorrect, it shoudl have a key as a string for the list of objects.
+   Option C is actually correct as well from JSON syntax perspective, I even checked it in Json Validator website.
+   But not to have a key for the list of objects is a bad practice.
