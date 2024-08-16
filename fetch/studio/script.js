@@ -13,22 +13,13 @@ window.addEventListener("load", () => {
                      <h2>${json[i].firstName} ${json[i].lastName}</h2>
                      <ul>
                      <li>Hours in space: ${json[i].hoursInSpace}</li>
-                 `;
-
-
-                if (json[i].active === true) {
-                    astronauts.innerHTML += `<li style="color: green">Active: ${json[i].active}</li>`;
-                } else {
-                    astronauts.innerHTML += `<li>Active: ${json[i].active}</li>`;
-                }
-                astronauts.innerHTML += `
-                    <li>Skills: ${json[i].skills}</li>  
+                     <li style="color:${(json[i].active === true) ? "green" : ""}">Active: ${json[i].active}
+                     <li>Skills: ${json[i].skills}</li>  
                          </ul>
                      </div>
                     <img class="avatar" src=${json[i].picture} alt="image of atronaut's face">
                  </div>`;
             }
-
         })
     });
 });
